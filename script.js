@@ -19,7 +19,7 @@ fetch("https://striveschool-api.herokuapp.com/books")
 
     booklist.forEach((book) => {
       const bookCard = document.createElement("div");
-      bookCard.className = "card";
+      bookCard.className = "card my-3 gx-1 col-5 col-md-4 col-lg-3";
 
       const img = document.createElement("img");
 
@@ -53,7 +53,7 @@ fetch("https://striveschool-api.herokuapp.com/books")
       removeButton.addEventListener("click", () => {
         bookCard.remove();
       });
-
+      divBody.appendChild(divBodyTitle);
       divBody.appendChild(p);
       divBody.appendChild(removeButton);
       bookCard.appendChild(img);
