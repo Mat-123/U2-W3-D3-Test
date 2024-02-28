@@ -50,6 +50,10 @@ fetch("https://striveschool-api.herokuapp.com/books")
       removeButton.className = "btn btn-primary";
       removeButton.innerText = "Rimuovi";
 
+      removeButton.addEventListener("click", () => {
+        bookCard.remove();
+      });
+
       divBody.appendChild(p);
       divBody.appendChild(removeButton);
       bookCard.appendChild(img);
